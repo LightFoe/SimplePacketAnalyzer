@@ -31,10 +31,15 @@ This script will analyze network traffic in the network to detect any syn-flood 
 
 > Usage : python3 detectattack.py iface
 
+To get all available interfaces use the flag -l
+
+> List all interfaces : python3 detectattack.py -l
+
 If iface is not correct it'll run with the default settings, sniffing on all interfaces.
 To check if the iface in input is the correct one there is a scapy function.
 
 ![](img/if_list.png "if_list.png")
+
 
 
 ### attack scripts
