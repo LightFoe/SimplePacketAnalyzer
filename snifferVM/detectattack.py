@@ -28,9 +28,9 @@ def isclose(t1, t2):
     t2 = t2.split(":")
     if t1[0] == t2[0]:  # if hour is the same
         # if minutes is the same or 1 less then return true
-        if t1[1] == t2[1]
-        or (int(t1[1])+1 == int(t2[1])
-                and (float(t1[2])-float(t2[2]) >= 0.0)):
+        condition1 = int(t1[1])+1 == int(t2[1])
+        condition2 = float(t1[2])-float(t2[2]) >= 0.0
+        if t1[1] == t2[1] or (condition1 and condition2):
             return True
     return False
 
@@ -50,9 +50,9 @@ def choosingwarn(i1syn, i2port, dest):
     # discovered, port-scan takes priority because a flood attack is like a
     # DoS, a port scan may be a preparation attempt to
     # an exploit
-    return "There might be a Port-Scanning attempt at :{}".format(dest)
-    if i2port > 15
-    else "There might be a Syn-flooding attempt :{}".format(dest)
+    pst = "There might be a Port-Scanning attempt at :{}".format(dest)
+    sfa = "There might be a Syn-flooding attempt :{}".format(dest)
+    return pst if i2port > 15 else sfa
 
 
 def checktempsyn(d, s, sp, dp, t, f, sm):
