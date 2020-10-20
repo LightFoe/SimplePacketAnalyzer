@@ -4,15 +4,25 @@ This repository contains a simple packet analyzer and two PoC python script
 
 ## Installing 
 
-1 clone the repo on the sniffer vm
-2 install the requirements.txt on the sniffer vm
-3 move the two PoC (Proof of Concept) attacks scripts(portscanSS.py and synattack.py) to the attacker vm and install the requirements.txt on that too
+###### 1 clone the repo on the sniffer vm
+
+```bash
+git clone https://github.com/LightFoe/SimplePacketAnalyzer.git
+```
+
+###### 2 install the requirements.txt on the sniffer vm
+
 ```bash
 pip install -r requirements.txt
 ```
-4 run the detetctattack.py script on the sniffer vm and choose an attack on the attacker vm and run it.
 
-Note that if both attacks are performed port-scan will have priority due to its nature. Syn-flood attacks are usually an end unto themself instead port scanning usually herald something bigger.
+###### 3 move the two PoC (Proof of Concept) attacks scripts(portscanSS.py and synattack.py) to the attacker vm and install the requirements.txt on that too
+
+###### 4 run the detetctattack.py script on the sniffer vm and choose an attack on the attacker vm and run it.
+
+#### Note 
+That if both attacks are performed port-scan will have priority due to its nature. Syn-flood attacks are usually an end unto themself instead port scanning usually herald something bigger.
+Each attempt will be logged in the output and in the logfile, in the logfile it'll be included a full trace of suspicious packets too.
 
 ### detectattack.py
 
@@ -21,10 +31,15 @@ This script will analyze network traffic in the network to detect any syn-flood 
 
 > Usage : python3 detectattack.py iface
 
+To get all available interfaces use the flag "L" as -l
+
+> List all interfaces : python3 detectattack.py -l
+
 If iface is not correct it'll run with the default settings, sniffing on all interfaces.
 To check if the iface in input is the correct one there is a scapy function.
 
 ![](img/if_list.png "if_list.png")
+
 
 
 ### attack scripts

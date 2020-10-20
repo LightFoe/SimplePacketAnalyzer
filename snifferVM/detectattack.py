@@ -175,7 +175,7 @@ if __name__ == '__main__':
         logging.config.fileConfig("log_config.ini",
                                   disable_existing_loggers=False)
     except KeyError:
-        print("Logfile not found")
+        print("Log config file not found")
     try:
         arg1, arg2 = sys.argv
         if test(arg2):  # if iface not in ifacelist print usage
