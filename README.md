@@ -6,7 +6,9 @@ This repository contains a simple packet analyzer and two PoC python script
 
 1 clone the repo on the sniffer vm
 
-> git clone https://github.com/LightFoe/SimplePacketAnalyzer.git
+```bash
+git clone https://github.com/LightFoe/SimplePacketAnalyzer.git
+```
 
 2 install the requirements.txt on the sniffer vm
 
