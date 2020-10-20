@@ -20,7 +20,8 @@ pip install -r requirements.txt
 
 ###### 4 run the detetctattack.py script on the sniffer vm and choose an attack on the attacker vm and run it.
 
-Note that if both attacks are performed port-scan will have priority due to its nature. Syn-flood attacks are usually an end unto themself instead port scanning usually herald something bigger.
+#### Note 
+That if both attacks are performed port-scan will have priority due to its nature. Syn-flood attacks are usually an end unto themself instead port scanning usually herald something bigger.
 Each attempt will be logged in the output and in the logfile, in the logfile it'll be included a full trace of suspicious packets too.
 
 ### detectattack.py
