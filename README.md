@@ -31,7 +31,7 @@ This script will analyze network traffic in the network to detect any syn-flood 
 
 > Usage : python3 detectattack.py iface
 
-To get all available interfaces use the flag -l
+To get all available interfaces use the flag "L" as -l
 
 > List all interfaces : python3 detectattack.py -l
 
