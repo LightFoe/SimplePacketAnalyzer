@@ -7,6 +7,9 @@ This repository contains a simple packet analyzer and two PoC python script
 1 clone the repo on the sniffer vm
 2 install the requirements.txt on the sniffer vm
 3 move the two PoC (Proof of Concept) attacks scripts(portscanSS.py and synattack.py) to the attacker vm and install the requirements.txt on that too
+```bash
+pip install -r requirements.txt
+```
 4 run the detetctattack.py script on the sniffer vm and choose an attack on the attacker vm and run it.
 
 Note that if both attacks are performed port-scan will have priority due to its nature. Syn-flood attacks are usually an end unto themself instead port scanning usually herald something bigger.
