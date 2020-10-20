@@ -181,10 +181,11 @@ if __name__ == '__main__':
         if test(arg2):  # if iface not in ifacelist print usage
             # scapy.config.conf.color_theme = RastaTheme()
             main(ifa=True)
+        elif arg2 == "-l":
+            print("Available interfecases are : ")
+            print(get_if_list())
         else:
             print("Interface not recognized, scanning on all...")
             main(ifa=False)
     except (TypeError, ValueError):
         print("usage python3 detectsynpscan.py <iface>")
-        print("Available interfecases are : ")
-        print(get_if_list())
