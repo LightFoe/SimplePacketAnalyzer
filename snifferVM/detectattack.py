@@ -186,3 +186,5 @@ if __name__ == '__main__':
             main(ifa=False)
     except (TypeError, ValueError):
         print("usage python3 detectsynpscan.py <iface>")
+        print("Available interfecases are : ")
+        print(get_if_list())
