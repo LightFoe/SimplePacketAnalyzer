@@ -18,6 +18,8 @@ pip install -r requirements.txt
 
 ###### 3 move the two PoC (Proof of Concept) attacks scripts(portscanSS.py and synattack.py) to the attacker vm and install the requirements.txt on that too
 
+Through a shared folder, scp, usb, apache or whatever you prefer.
+
 ###### 4 run the detetctattack.py script on the sniffer vm and choose an attack on the attacker vm and run it.
 
 #### Note 
