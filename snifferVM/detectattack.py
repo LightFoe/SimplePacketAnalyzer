@@ -117,7 +117,7 @@ def detectnow(pkt):
         domore()
 
 
-# it'll be implemeted to get more result
+# it'll be implemeted to get more result on the next attack detection 
 def domore():
     pass
 
