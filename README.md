@@ -59,4 +59,7 @@ This script is a PoC of a tcp syn scan just to demonstrate that a tcp syn scan w
 > Usage : python3 portscanSS.py
 
 
+It'll be updated once in a while to add more features and some more detection type.
+
+
 
