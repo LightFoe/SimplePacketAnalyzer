@@ -24,6 +24,8 @@ pip install -r requirements.txt
 That if both attacks are performed port-scan will have priority due to its nature. Syn-flood attacks are usually an end unto themself instead port scanning usually herald something bigger.
 Each attempt will be logged in the output and in the logfile, in the logfile it'll be included a full trace of suspicious packets too.
 
+****** 
+
 ### detectattack.py
 
 This script will analyze network traffic in the network to detect any syn-flood attack and port scanning attacks.
@@ -40,7 +42,7 @@ To check if the iface in input is the correct one there is a scapy function.
 
 ![](img/if_list.png "if_list.png")
 
-
+******
 
 ### attack scripts
 
